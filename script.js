@@ -43,7 +43,7 @@ function actualizarCarrito() {
     document.getElementById("total-carrito").textContent = carrito.length;
 }
 
-// Preguntas
+// Preguntas de usuarios
 const formPregunta = document.getElementById("form-pregunta");
 formPregunta.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -56,7 +56,18 @@ formPregunta.addEventListener("submit", (e) => {
     formPregunta.reset();
 });
 
-// Pago
+// Formulario de contacto
+const formContacto = document.getElementById("form-contacto");
+formContacto.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById("contacto-nombre").value;
+    const mensaje = document.getElementById("contacto-mensaje").value;
+    const confirmacion = document.getElementById("confirmacion-contacto");
+    confirmacion.innerHTML = `<p>Gracias, <strong>${nombre}</strong>. Tu mensaje fue enviado correctamente.</p>`;
+    formContacto.reset();
+});
+
+// Formulario de pago
 const formPago = document.getElementById("form-pago");
 formPago.addEventListener("submit", (e) => {
     e.preventDefault();
