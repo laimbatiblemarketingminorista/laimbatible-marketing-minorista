@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Imbatible Marketing Minorista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">La Imbatible Marketing Minorista</div>
+        <nav>
+            <a href="#productos">Productos</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#faq">Preguntas</a>
+            <a href="#contacto">Contacto</a>
+            <div class="carrito">
+                🛒 <span id="total-carrito">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Encuentra los productos que necesitas con estilo y comodidad</h1>
+        <a href="#productos" class="btn-verde">Ver Productos</a>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="filtros">
+            <label>Categoría:</label>
+            <select id="filtro-categoria">
+                <option value="todos">Todos</option>
+                <option value="ropa">Ropa</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="hogar">Hogar</option>
+            </select>
+        </div>
+        <div id="lista-productos" class="grid-productos">
+            <!-- Los productos se cargan aquí dinámicamente -->
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En La Imbatible Marketing Minorista ofrecemos productos de calidad, con atención y servicio personalizados.</p>
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section id="faq">
+        <h2>Preguntas sobre los productos</h2>
+        <form id="form-pregunta">
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu email" required>
+            <textarea id="pregunta" placeholder="Escribe tu pregunta..." required></textarea>
+            <button type="submit" class="btn-verde">Enviar pregunta</button>
+        </form>
+        <div id="lista-preguntas">
+            <!-- Las preguntas se muestran aquí -->
+        </div>
+    </section>
+
+    <!-- PAGO -->
+    <section id="pago">
+        <h2>Sección de Pago</h2>
+        <form id="form-pago">
+            <input type="text" id="nombre-pago" placeholder="Nombre completo" required>
+            <input type="text" id="direccion" placeholder="Dirección de envío" required>
+            <input type="email" id="email-pago" placeholder="Email" required>
+            <select id="metodo-pago" required>
+                <option value="">Seleccioná método de pago</option>
+                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                <option value="efectivo">Efectivo</option>
+            </select>
+            <button type="submit" class="btn-verde">Finalizar compra</button>
+        </form>
+        <div id="confirmacion-pago"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 La Imbatible Marketing Minorista</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
