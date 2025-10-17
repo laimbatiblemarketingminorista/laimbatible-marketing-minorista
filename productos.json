@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nombre": "Camiseta", "precio": 20, "categoria": "ropa", "imagen": "images/camiseta.jpg" },
+  { "id": 2, "nombre": "Gorra", "precio": 10, "categoria": "accesorios", "imagen": "images/gorra.jpg" },
+  { "id": 3, "nombre": "Almohada", "precio": 15, "categoria": "hogar", "imagen": "images/almohada.jpg" },
+  { "id": 4, "nombre": "Pantalón", "precio": 25, "categoria": "ropa", "imagen": "images/pantalon.jpg" }
+]
