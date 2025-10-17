@@ -1,1 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+header nav .carrito {
+    font-size: 1.2em;
+}
+
+/* Botones verdes */
+.btn-verde {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-verde:hover {
+    background-color: #218838;
+}
+
+/* Hero */
+.hero {
+    background-color: #e9f7ef;
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+/* Productos */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid-productos .producto {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.grid-productos img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formularios */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    width: 100%;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+}
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
 
