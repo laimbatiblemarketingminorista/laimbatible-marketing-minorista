@@ -1,10 +1,14 @@
-// Datos de ejemplo de productos con imágenes
-const productos = [
-    {id: 1, nombre: "Camiseta", precio: 20, categoria: "ropa", imagen: "images/camiseta.jpg"},
-    {id: 2, nombre: "Gorra", precio: 10, categoria: "accesorios", imagen: "images/gorra.jpg"},
-    {id: 3, nombre: "Almohada", precio: 15, categoria: "hogar", imagen: "images/almohada.jpg"},
-    {id: 4, nombre: "Pantalón", precio: 25, categoria: "ropa", imagen: "images/pantalon.jpg"},
-];
+let productos = [];
+let carrito = [];
+
+// Cargar productos desde JSON
+fetch('productos.json')
+  .then(response => response.json())
+  .then(data => {
+    productos = data;
+    mostrarProductos(); // llamamos a la función que muestra los productos
+  })
+  .catch(error => console.error('Error al cargar productos:', error));
 
 // Carrito
 let carrito = [];
